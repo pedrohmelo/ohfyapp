@@ -29,5 +29,15 @@ export const styles = StyleSheet.create({
     },
     forgotPassword: {
         color: '#fff',
+        marginTop: 10
+    },
+    signInButton: {
+        backgroundColor: '#fff',
+        padding: 5,
+        borderRadius: 10,
+        marginTop: 30,
+        width: '20%',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 })

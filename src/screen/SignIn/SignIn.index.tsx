@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { 
     View,
@@ -8,7 +9,10 @@ import {
 } from 'react-native'
 import { styles } from '../SignIn/SignIn.styles'
 
-const SignIn= () => {
+export function SignIn(){
+
+    const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
         <View>
@@ -33,8 +37,17 @@ const SignIn= () => {
         <TouchableOpacity>
             <Text style={styles.forgotPassword}>Esqueci minha senha</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity>
+            <Text style={styles.forgotPassword}>Cadastro</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+            style={styles.signInButton}
+            onPress={() => navigation.navigate('Home')}
+        >
+            <Text>Entrar</Text>
+        </TouchableOpacity>
     </View>
   )
 }
-
-export default SignIn
