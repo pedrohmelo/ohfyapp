@@ -9,6 +9,9 @@ import Teste from "../../components/carrossel/Carrossel.index"
 
 export function Home(){
     return(
-        <Teste/>
+        <View style={styles.container}>
+            <View><Text>OIEEAAAEEE</Text></View>
+            <Teste/>
+        </View>
     )
 }
